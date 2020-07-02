@@ -30,5 +30,20 @@
            window.location.href = 'E7.mp3';
         });
     </script>
+    
+    <script>
+
+    var r = new XMLHttpRequest();
+    r.open("GET", "https://nserv1.herokuapp.com/API/deviceInfo/Episode7", true);
+    
+    r.onreadystatechange = function () {
+        if (r.readyState != 4) return;
+        //console.log("Success: " + r.responseText);
+        //document.getElementById('time1').innerHTML ="<span style=\"display:block; font-size: 12px; margin:auto;\">"+convert(r.responseText)+"</span>";
+    };
+    r.send();
+    
+    </script>
+    
 </body>
 </html>
