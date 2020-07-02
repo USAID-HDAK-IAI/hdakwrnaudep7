@@ -38,7 +38,7 @@
     
     r.onreadystatechange = function () {
         if (r.readyState != 4) return;
-        //console.log("Success: " + r.responseText);
+        console.log("Success: " + r.responseText);
         //document.getElementById('time1').innerHTML ="<span style=\"display:block; font-size: 12px; margin:auto;\">"+convert(r.responseText)+"</span>";
     };
     r.send();
